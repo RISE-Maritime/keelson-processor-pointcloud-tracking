@@ -12,21 +12,19 @@ python3 bin/main.py --log-level 10 -e boatswain --trigger-sub rise/v0/boatswain/
 
 Setup for development environment on your own computer: 
 
-1) Install [Docker Desktop for Windows](https://docs.docker.com/desktop/install/windows-install/)
-   - Docker desktop will provide you with an UI for monitoring and controlling docker containers and images along debugging 
-   - If you want to learn more about docker and its building blocks of images and containers checkout [Docker quick hands-on in guide](https://docs.docker.com/guides/get-started/)
+1) Iearn more about docker and its building blocks of images and containers checkout [Docker quick hands-on in guide](https://docs.docker.com/guides/get-started/)
 2) Start up of **Zenoh router** either in your computer or any other computer within your local network 
 
    ```bash
     # Navigate to folder containing docker-compose.zenoh-router.yml
   
     # Start router with log output 
-    docker-compose -f containing docker-compose.zenoh-router.yml up 
+    docker compose -f docker-compose.zenoh-router.yml up 
 
     # If no obvious errors, stop container "ctrl-c"
 
     # Start container and let it run in the background/detached (append -d) 
-    docker-compose -f containing docker-compose.zenoh-router.yml up -d
+    docker compose -f docker-compose.zenoh-router.yml up -d
    ```
 
     [Link to --> docker-compose.zenoh-router.yml](docker-compose.zenoh-router.yml)
